@@ -1,0 +1,98 @@
+[
+  {
+    "id": "urn:ietf:params:scim:schemas:extension:voucher:Device",
+    "name": "voucherExtension",
+    "description": "Voucher extension for device account",
+    "attributes" : [
+      {
+        "name": "createdOn",
+        "type": "string",
+        "description": "Provides a yang:data-and-time encoding of the date the voucher was created.",
+        "multivalues": false,
+        "required": true,
+        "caseExact": false,
+        "mutability": "readWrite",
+        "returned": "default",
+        "uniqueness": "none"
+      },
+      {
+        "name": "expiresOn",
+        "type": "string",
+        "description": "Provides a yang:data-and-time encoding of the date the voucher expires..",
+        "multivalues": false,
+        "required": true,
+        "caseExact": false,
+        "mutability": "readWrite",
+        "returned": "default",
+        "uniqueness": "none"
+      },
+      {
+        "name": "assertion",
+        "type": "enum",
+        "description": "The manufacurer's assertion of how the owner was verified. ['verified', 'logged', 'proximity'].",
+        "multivalues": false,
+        "required": true,
+        "caseExact": false,
+        "mutability": "readWrite",
+        "returned": "default",
+        "uniqueness": "none"
+      },
+      {
+        "name": "serialNumber",
+        "type": "string",
+        "description": "The serial-number of the hardware.",
+        "multivalues": false,
+        "required": true,
+        "caseExact": false,
+        "mutability": "readWrite",
+        "returned": "default",
+        "uniqueness": "Manufacturer"
+      },
+      {
+        "name": "idevidIssuer",
+        "type": "string",
+        "format": "binary",
+        "description": "The Authority Key Identifier OCTET STRING (as defined in
+           Section 4.2.1.1 of RFC 5280) from the pledge's IDevID
+           certificate.",
+        "multivalues": false,
+        "required": true,
+        "caseExact": true,
+        "mutability": "readWrite",
+        "returned": "default",
+        "uniqueness": "none"
+      },
+      {
+        "name": "pinnedDomainCert",
+        "type": "string",
+        "format": "binary",
+        "description": "An X.509 v3 certificate structure, as specified by RFC 5280,
+           using Distinguished Encoding Rules (DER) encoding, as defined
+           in ITU-T X.690.",
+        "multivalues": false,
+        "required": true,
+        "caseExact": true,
+        "mutability": "readWrite",
+        "returned": "default",
+        "uniqueness": "none"
+      },
+      {
+        "name": "domainCertRevocationChecks",
+        "type": "boolean",
+        "description": "A processing instruction to the device that it MUST (true)
+           or MUST NOT (false) verify the revocation status for the
+           pinned domain certificate. .",
+        "multivalues": false,
+        "required": true,
+        "caseExact": true,
+        "mutability": "readWrite",
+        "returned": "default",
+        "uniqueness": "none"
+      }
+    ],
+    "meta" : {
+      "resourceType" : "Schema",
+      "location" : "/v2/Schemas/urn:ietf:params:scim:schemas:extension:voucher:Device"
+    }
+  }
+]
