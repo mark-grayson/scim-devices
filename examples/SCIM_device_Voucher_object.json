@@ -1,0 +1,45 @@
+{
+        "schemas": ["urn:ietf:params:scim:schemas:core:2.0:Device",
+                 "urn:ietf:params:scim:schemas:extension:voucher:2.0:Device"],
+
+        "id": "1cf4bd20-665c-4f79-a7e5-e8a3fee6cd34",
+        "displayName": "O-RAN Radio Unit",
+        "adminState": true,
+        "urn:ietf:params:scim:schemas:extension:voucher:2.0:Device" : {
+                "serialNumber": "o-ran-ru2/vendorA/ORUAA100/FR1918010111",
+                "createdOn": "2023-01-23T09:31:42Z",
+                "expiresOn": "2023-07-23T09:31:42Z",
+                "assertion": "logged",
+                "idevidIssuer": "vendorA Issuing I-CA",
+                "pinnedDomainCert": "-----BEGIN CERTIFICATE-----
+                                    MIIDejCCAmICCQDXFZ1xSKK1hzANBgkqhkiG9w0BAQsFADB/MQswCQYDVQQGEwJV
+                                    UzETMBEGA1UECAwKQ2FsaWZvcm5pYTERMA8GA1UEBwwIU2FuIEpvc2UxFjAUBgNV
+                                    BAoMDU9wZXJhdG9yIEluYy4xGTAXBgNVBAsMEFNlY3VyaXR5IFNlcnZpY2UxFTAT
+                                    BgNVBAMMDG9wZXJhdG9yLmNvbTAeFw0yMzAxMjMxMDQ5MzBaFw0zMzAxMjAxMDQ5
+                                    MzBaMH8xCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApDYWxpZm9ybmlhMREwDwYDVQQH
+                                    DAhTYW4gSm9zZTEWMBQGA1UECgwNT3BlcmF0b3IgSW5jLjEZMBcGA1UECwwQU2Vj
+                                    dXJpdHkgU2VydmljZTEVMBMGA1UEAwwMb3BlcmF0b3IuY29tMIIBIjANBgkqhkiG
+                                    9w0BAQEFAAOCAQ8AMIIBCgKCAQEAukQoos++WLuIh2YAa97Ak1Y4ephvlGOgukmR
+                                    re6410Gp1Ad3T9+SxN3PzZOTvJsiGWj5n4zDuUFqia200q/ETRJA5BTSNZ7qiFNe
+                                    aMFO+wi0AXHJLKQ905DLV8z/+dCJphXH0Fx31bapJT7YoE/4oRvzrzDjzHM7WXdF
+                                    RZnMZJUnh1eRmEsR5xRiYB1SSGD/ZXCR8mdWQ2deVZpcZckaP35nDp3XOqVw0X7P
+                                    lrpzAnj/IeXe9BUyc01gs8QSpOFRzX2w/4mbe1a1SNB/mRmykL1C0B122Uvm+NJl
+                                    rmIWmJQ+s4O7nE91ApB9+FSjAQv9Iay1pyQmYDoZ8L9/nIKdTwIDAQABMA0GCSqG
+                                    SIb3DQEBCwUAA4IBAQCOCm+HCdBUUZQMjoE/OVZdV7scBwzJDCO+q6EOiXpgYmBK
+                                    oba9hlTc2jRfIKDYblY4SiKJzQIBqgRwi1WDslCZRbvHVD89n220m12UVuMaGDKy
+                                    rPDHJafkWT7dgqoqjuDB+bW0+mC/gN1okPxPq0lnnACLFHbz6qWPaJXqIAbVpOT2
+                                    Y1Z4IM/cU9CcK4qExyJZdQWTa4pUkmK5KoacfsoG6tzO5dk5DTu5OXPZUViUXdh4
+                                    749vXqNGz6fO/RTAVx3UZUWnnw3jbZqDcxcoYEsSCq9YRnxKnlwJCblasNRCszen
+                                    LnWLQjJd6cqCPDH7C3JfpmloiZ7HoeCYvuG8m6M7
+                                    -----END CERTIFICATE-----"
+                "domainCertRevocationChecks": true,
+                "voucherSignature":
+        },
+        "meta": {
+          "resourceType": "Device",
+          "created": "2023-01-23T04:56:22Z",
+          "lastModified": "2023-01-23T04:42:34Z",
+          "version": "W\/\"a330bc54f0671c9\"",
+          "location": "https://example.com/v2/Device/1cf4bd20-665c-4f79-a7e5-e8a3fee6cd34"
+        }
+}
