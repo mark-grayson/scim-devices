@@ -66,7 +66,7 @@
         "name": "pinnedDomainCert",
         "type": "string",
         "format": "binary",
-        "description": "An X.509 v3 certificate structure, as specified by RFC 5280,
+        "description": "An X.509 v3 certificate structure, as specified by RFC 5280, 
            using Distinguished Encoding Rules (DER) encoding, as defined
            in ITU-T X.690.",
         "multivalues": false,
@@ -92,7 +92,7 @@
     ],
     "meta" : {
       "resourceType" : "Schema",
-      "location" : "/v2/Schemas/urn:ietf:params:scim:schemas:extension:voucher:Device"
+      "location" : "/v2/Schemas/urn:ietf:params:scim:schemas:extension:voucher:2.0:Device"
     }
   }
 ]
