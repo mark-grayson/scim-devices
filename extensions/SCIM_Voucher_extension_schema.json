@@ -1,6 +1,6 @@
 [
   {
-    "id": "urn:ietf:params:scim:schemas:extension:voucher:Device",
+    "id": "urn:ietf:params:scim:schemas:extension:voucher:2.0:Device",
     "name": "voucherExtension",
     "description": "Voucher extension for device account",
     "attributes" : [
