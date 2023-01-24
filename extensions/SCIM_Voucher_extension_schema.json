@@ -29,7 +29,7 @@
       {
         "name": "expiresOn",
         "type": "string",
-        "description": "Provides a yang:data-and-time encoding of the date the voucher expires..",
+        "description": "Provides a yang:data-and-time encoding of the date the voucher expires.",
         "multivalues": false,
         "required": true,
         "caseExact": false,
@@ -82,18 +82,7 @@
         "uniqueness": "none"
       },
       {
-        "name": "voucherSignature",
-        "type": "object",
-        "description": "",
-        "multivalues": false,
-        "required": true,
-        "caseExact": true,
-        "mutability": "readWrite",
-        "returned": "default",
-        "uniqueness": "none"
-      },
-      {
-      "name": "voucherSignaturer",
+      "name": "voucherSignature",
       "type": "complex",
       "description": "JSON Signature",
       "multivalues": false,
@@ -139,7 +128,51 @@
             {
               "name": "curveName",
               "type": "string",
-              "description": "EC curve name. The currently recognized EC curves include: P-256, P-384, P-521. Required when keytype=EC",
+              "description": "EC curve name. The currently recognized EC curves include: P-256, P-384, P-521. The currently recognized OKP curves include: Ed25519, Ed448.Required when keytype=EC or OKP.",
+              "multivalues": false,
+              "required": false,
+              "caseExact": true,
+              "mutability": "readWrite",
+              "returned": "default",
+              "uniqueness": "none"
+            },
+            {
+              "name": "xCoordinate",
+              "type": "bytes",
+              "description": "The curve point X. Base64URL-encoded [RFC4648] binary data. Required when keytype=EC or OKP.",
+              "multivalues": false,
+              "required": false,
+              "caseExact": true,
+              "mutability": "readWrite",
+              "returned": "default",
+              "uniqueness": "none"
+            },
+            {
+              "name": "yCoordinate",
+              "type": "bytes",
+              "description": "EC curve point Y. Base64URL-encoded [RFC4648] binary data. Base64URL-encoded [RFC4648] binary data. Required when keytype=EC.",
+              "multivalues": false,
+              "required": false,
+              "caseExact": true,
+              "mutability": "readWrite",
+              "returned": "default",
+              "uniqueness": "none"
+            },
+            {
+              "name": "modulus",
+              "type": "string",
+              "description": "RSA modulus. Base64URL-encoded positive integer with arbitrary precision. Note that the value must not contain leading zero-valued bytes. Required when keytype=RSA.",
+              "multivalues": false,
+              "required": false,
+              "caseExact": true,
+              "mutability": "readWrite",
+              "returned": "default",
+              "uniqueness": "none"
+            },
+            {
+              "name": "exponent",
+              "type": "bytes",
+              "description": "RSA exponent. Base64URL-encoded positive integer with arbitrary precision. Note that the value must not contain leading zero-valued bytes. Required when keytype=RSA.",
               "multivalues": false,
               "required": false,
               "caseExact": true,
