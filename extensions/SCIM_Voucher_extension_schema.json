@@ -2,7 +2,7 @@
   {
     "id": "urn:ietf:params:scim:schemas:extension:voucher:2.0:Device",
     "name": "voucherExtension",
-    "description": "Voucher extension for device account",
+    "description": "RFC 8366 Voucher artefact extension for device account",
     "attributes" : [
       {
         "name": "serialNumber",
@@ -50,8 +50,8 @@
       },
       {
         "name": "idevidIssuer",
-        "type": "string",
-        "description": "The authority Key Identifier (as defined in Section 4.2.1.1 of RFC 5280) from the pledge's IDevID certificate.",
+        "type": "bytes",
+        "description": "The authority Key Identifier (as defined in Section 4.2.1.1 of RFC 5280) from the pledge's IDevID certificate. Base64URL-encoded [RFC4648] binary data",
         "multivalues": false,
         "required": true,
         "caseExact": true,
